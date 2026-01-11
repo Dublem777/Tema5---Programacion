@@ -2,7 +2,7 @@ package Tema_5_1_GetySet;
 
 import java.util.Scanner;
 
-public class Main_ej1 {
+public class Main {
 	public static void main(String[] args) {
 			Scanner teclado = new Scanner(System.in);
 
