@@ -1,4 +1,4 @@
-package Tema5_2_MetodoToString;
+package Tema_5_2_MetodoToString;
 
 public class Person {
 	private String name;

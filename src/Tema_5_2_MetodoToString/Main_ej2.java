@@ -1,4 +1,4 @@
-package Tema5_2_MetodoToString;
+package Tema_5_2_MetodoToString;
 
 public class Main_ej2 {
 	public static void main(String[] args) {
