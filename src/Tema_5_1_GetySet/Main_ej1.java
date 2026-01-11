@@ -4,18 +4,38 @@ import java.util.Scanner;
 
 public class Main_ej1 {
 	public static void main(String[] args) {
-		Person p = new Person("Paco");
+			Scanner teclado = new Scanner(System.in);
 
-		System.out.println("El nombre actual es: " + p.getName());
+		Person p = new Person("Paco",22, 1.80f, "Cocinero");
 
-		Scanner teclado = new Scanner(System.in);
+		System.out.println("-----Datos actuales------");
+
+		System.out.println("El nombre es: " + p.getName());
+		System.out.println("La edad es: " + p.getAge());
+		System.out.println("La altura es: " + p.getHeight());
+		System.out.println("El trabajo es: " + p.getWork());
+
+		System.out.println("-----Modificar datos-----");
+
 		System.out.print("Introduce el nuevo nombre: ");
-		String nuevoNombre = teclado.nextLine();
+		p.setName(teclado.nextLine());
 
-		p.setName(nuevoNombre);
+		System.out.print("Introduce la nueva edad: ");
+		p.setAge(teclado.nextInt());
 
+		System.out.print("Introduce la nueva altura: ");
+		p.setHeight(teclado.nextFloat());
+		teclado.nextLine();
+
+		System.out.print("Introduce el nuevo trabajo: ");
+		p.setWork(teclado.nextLine());
+		
 		System.out.println("El nuevo nombre asignado es: " + p.getName());
+		System.out.println("La nueva edad asignada es: " + p.getAge());
+		System.out.println("La nueva altura asignada es: " + p.getHeight());
+		System.out.println("La nueva profesion asignada es: " + p.getWork());
 
 		teclado.close();
+		
 	}
 }
